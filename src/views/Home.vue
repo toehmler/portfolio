@@ -21,7 +21,7 @@
     <div id="projects" class="container-fluid py-5">
       <div class="container">
         <div class="row justify-content-center justify-content-lg-start align-items-center">
-          <div v-for="project in projects" class="col-lg-6 col-md-9 mb-4">
+          <div v-for="project in projects" v-bind:key="project.step" class="col-lg-6 col-md-9 mb-4">
             <a :href="project.href">
               <img :src="project.src" class="img-fluid project-tile">
             </a>
@@ -33,22 +33,24 @@
 </template>
 
 <script>
+/* eslint-disable */
 export default {
   data() {
     return {
       projects: [
         {
           step:1,
-          title: 'Partisan News Viewer',
-          src: '/news_app_tile.jpg',
-          href: 'https://news.treyoehmler.com',
-        },
-        {
-          step:2,
           title: 'UNet: Automatic Brain Tumor Segmentation',
           src: '/tumor_tile.jpg',
           href: '/unet',
         },
+        {
+          step:2,
+          title: 'Partisan News Viewer',
+          src: '/news_app_tile.jpg',
+          href: 'https://github.com/toehmler/news',
+        },
+
         {
           step: 3,
           title: 'Dompen',

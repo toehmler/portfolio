@@ -47,11 +47,11 @@
       <img src="/projects/domcbd/other_products_mobile.png" class="img-fluid d-md-none">
     </div>
     <div class="prlx" id="bg-4"></div>
-    </div>
   </div>
 </template>
 
 <script>
+export default {}
 </script>
 
 

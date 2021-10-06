@@ -6,7 +6,6 @@
           <h1 id="title"><span class="fw-600">NuNet</span><br>Using Convolutional Neural Networks to Automatically Segment Brain Tumors</h1>
           <p class="lead my-4">I've trained a model that can accurately and quickly segment the various subregions of high-grade gliomas. This project was started as an independent research inquiry while I was an undergrad and I've continued working on the project out of curiosity. I'd like to try and explain how I did it, what makes the architecture I choose so special, and why I believe UNets will become the standard architecture for segmentation tasks long into the future.</p>
           <p class="small"><b>Note:</b> this project and explanation assume some background knowledge of programming, linear algebra, neural networks, kernel convolutions and the digital representation of images.
-            <span class="small fw-light">ie. everything</span>
           </p>
         </div>
         <div class="d-none d-lg-block col-lg-4 col-xl-4 offset-lg-1">
